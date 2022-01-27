@@ -26,6 +26,9 @@ html {
     height: 100%;
     box-sizing:border-box;
     scroll-behavior: smooth;
+    background-image: url("../images/brick-wall.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 body {
