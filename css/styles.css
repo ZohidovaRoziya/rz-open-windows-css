@@ -58,4 +58,51 @@ img {
 /* SAIT MAIN CSS START  */
 .site-main {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* WINDOWS CSS START  */
+.wall {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/brick-wall.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.rom {
+    display: flex;
+    border: 40px ridge rgb(104, 37, 6);
+    box-shadow: 5px 5px 40px 20px rgba(0, 0, 0, 0.6);
+    background-image: url("../images/kitoblar.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.tabaqa {
+    border: 20px ridge rgb(148, 52, 7);
+    width: 200px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: transform 2s ease;
+}
+
+.tabaqa-left {
+    transform-origin: left center;
+}
+
+.tabaqa-right {
+    transform-origin: right center;
+}
+
+.rom:hover .tabaqa-left {
+    transform: perspective(2000px) rotateY(-135deg);
+}
+
+.rom:hover .tabaqa-right {
+    transform: perspective(2000px) rotateY(135deg);
 }
